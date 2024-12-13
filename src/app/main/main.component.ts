@@ -14,7 +14,7 @@ export class MainComponent implements OnInit, OnDestroy {
   sub!: Subscription;
   ngOnInit(): void {
     this.sub = this.sharedFunctions
-      .scramble(this.name, 50)
+      .scramble(this.name, 70)
       .subscribe((newName) => {
         this.name = newName;
       });
