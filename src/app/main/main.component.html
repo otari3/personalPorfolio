@@ -1,0 +1,58 @@
+<main>
+  <div>
+    <h2>{{ name }}</h2>
+    <div class="staying">
+      <i class="fa-solid fa-location-dot"></i>
+      <p class="location">Georgia, Kutaisi</p>
+    </div>
+    <article>
+      <p class="text">
+        i'm a 24 y/o passionate developer. i love building things and solving
+        <br />
+        problems. i enjoy language design, theoretical computer science and i
+        <br />
+        live on the terminal. if i'm not coding i'm probably working out, <br />
+        watching movies or obsessing over mechanical keyboards. <br />
+      </p>
+      <section>
+        <h1><span class="mark">*</span> Projects</h1>
+        <div class="projects">
+          <div *ngFor="let items of sharedFunctions.mainPageProjects">
+            <a [href]="items.link" target="_blank" class="projectName">
+              {{ items.title }}
+            </a>
+            <p class="projectExplaning text" [innerHTML]="items.desc"></p>
+          </div>
+          <div class="allProjects">
+            <a href="https://github.com/otari3/" target="_blank"
+              >all projects <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <h1><span class="mark">*</span> Education</h1>
+        <div class="projects">
+          <div *ngFor="let items of sharedFunctions.mainPageEducation">
+            <a class="projectName">
+              {{ items.title }}
+            </a>
+            <p class="projectExplaning text" [innerHTML]="items.desc"></p>
+          </div>
+        </div>
+        <h1><span class="mark">*</span> Links</h1>
+        <ul>
+          <li><a href="mailto:otikonozadze@gmail.com">email</a></li>
+          <li>
+            <a href="https://github.com/otari3/" target="_blank">github</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/otiko-nozadze-571291199/"
+              target="_blank"
+              >linkdin</a
+            >
+          </li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
