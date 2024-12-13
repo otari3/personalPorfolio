@@ -1,5 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, delay, from, interval, zipWith } from 'rxjs';
+import {
+  Observable,
+  Subject,
+  delay,
+  from,
+  interval,
+  take,
+  zipWith,
+} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -45,8 +53,8 @@ export class SharedFunctionsService {
         )
         .join('');
       subscriber.next(scrambled);
-      from(name.split(''))
-        .pipe(zipWith(interval(time)))
+      const innerSub = from(name.split(''))
+        .pipe(zipWith(interval(time)), take(name.length))
         .subscribe({
           next: ([char, index]) => {
             let newDisplay = scrambled.split('');
@@ -62,6 +70,9 @@ export class SharedFunctionsService {
             subscriber.complete();
           },
         });
+      return () => {
+        innerSub.unsubscribe();
+      };
     });
   }
 }

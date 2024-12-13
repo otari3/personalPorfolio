@@ -13,11 +13,14 @@ export class MainComponent implements OnInit, OnDestroy {
   sharedFunctions = inject(SharedFunctionsService);
   sub!: Subscription;
   ngOnInit(): void {
-    this.sub = this.sharedFunctions
-      .scramble(this.name, 70)
-      .subscribe((newName) => {
+    this.sub = this.sharedFunctions.scramble(this.name, 70).subscribe({
+      next: (newName) => {
         this.name = newName;
-      });
+      },
+      complete: () => {
+        this.sub.unsubscribe();
+      },
+    });
   }
   ngOnDestroy(): void {
     this.sub.unsubscribe();
