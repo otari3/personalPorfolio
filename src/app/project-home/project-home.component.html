@@ -1,0 +1,12 @@
+<h1><span>*</span>{{ projectName }}</h1>
+<p>
+  here are some of the projects i've worked on. i love building tools that make
+  developers' lives easier and exploring new technologies along the way.P.S site
+  might have 30-35s cold start
+</p>
+<main>
+  <app-projects
+    *ngFor="let items of shared.allProjects"
+    [project]="items"
+  ></app-projects>
+</main>

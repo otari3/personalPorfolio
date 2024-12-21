@@ -23,7 +23,7 @@ export class SharedFunctionsService {
     {
       title: 'Film Site',
       link: 'https://films-site-murex.vercel.app',
-      desc: 'This site features full authorization, bookmarking, and search <br/> systems. The backend is built with Node.js, Express, and <br/> MongoDB/Mongoose.',
+      desc: 'This site features full authorization, bookmarking, and search <br/> systems. The backend is built with Node.js, Express, and <br/> MongoDB/Mongoose. P.S site might have 30-35s cold start',
     },
   ];
   mainPageEducation = [
@@ -41,6 +41,38 @@ export class SharedFunctionsService {
       title: 'Python, Django, and PostgreSQL Training at Step Academy',
       link: '',
       desc: 'I completed a training program at Step Academy, where I learned Python <br> and Django, with a focus on building REST APIs, handling back-end <br> development tasks, and working extensively with PostgreSQL for <br> database management.',
+    },
+  ];
+  mainPageExperinec = [
+    {
+      title:
+        'Maintenance and Development of In-House Hotel Booking Web Application',
+      desc: "Worked at Gelati Residence Hotel as the primary maintainer and developer <br> of their in-house booking web application. Responsibilities included <br> ensuring smooth operation of the system, fixing bugs, improving <br> functionality, and enhancing the user experience for both staff and <br> guests. Contributed to the application's stability and scalability by <br> implementing updates, managing data integrity, and addressing technical <br> challenges promptly to support the hotel's operational needs.",
+    },
+  ];
+  allProjects = [
+    {
+      header: 'Hotel Booking',
+      link: 'https://step-project-hotel-aa21.vercel.app/',
+      subHeader: 'creator',
+      desc: 'Hotel booking web application for guest',
+      achiv: [
+        'successfully implemented already existing api',
+        'successfully used ngrx for complicated state management',
+      ],
+      tech: ['Angular', 'ngrx', 'c#'],
+    },
+    {
+      header: 'Film Site',
+      link: 'https://films-site-murex.vercel.app/',
+      subHeader: 'creator',
+      desc: 'Film  web application with its own auth search,function,booking logic',
+      achiv: [
+        'successfully created my own backend',
+        'successfully used mongodb/mongoose to create complex queries',
+        'successfully implemented my own secure authorization',
+      ],
+      tech: ['Angular', 'ngrx', 'mongodb', 'mongoose', 'express', 'nodejs'],
     },
   ];
   scramble(name: string, time: number): Observable<string> {

@@ -1,0 +1,72 @@
+main {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid #1d2632;
+  &:hover {
+    border: 1px solid #ff6b34;
+    transition: 0.4s;
+    .header {
+      color: #ff6b34;
+      transition: 0.4s;
+    }
+  }
+  div {
+    color: white;
+    font-family: "Geist Mono", monospace;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    .subheader {
+      font-weight: 100;
+      opacity: 0.8;
+      font-size: 14px;
+    }
+    .header {
+      margin: 0;
+      padding-top: 16px;
+      font-size: 28px;
+      width: 100%;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .desc {
+      font-weight: 100;
+    }
+    .achivments {
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 18.4px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li {
+        font-family: "Geist Mono", monospace;
+        font-weight: 100;
+      }
+    }
+    .technogolis {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      gap: 10px;
+      margin-top: 10px;
+      margin-left: 3px;
+      padding: 0;
+      li {
+        list-style: none;
+        background-color: #181d24;
+        padding-inline: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-family: "Geist Mono", monospace;
+        font-weight: 200;
+        font-size: 14px;
+      }
+    }
+  }
+}
+p {
+  margin: 0;
+  padding-top: 15px;
+}

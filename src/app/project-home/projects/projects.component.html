@@ -1,0 +1,17 @@
+<main>
+  <div>
+    <a class="header" [href]="project.link" target="_blank">{{
+      project.header
+    }}</a>
+    <p class="subheader">{{ project.subHeader }}</p>
+    <p class="desc">{{ project.desc }}</p>
+    <p>achivments</p>
+    <ul class="achivments">
+      <li *ngFor="let items of project.achiv">{{ items }}</li>
+    </ul>
+    <p>technologies</p>
+    <ul class="technogolis">
+      <li *ngFor="let items of project.tech">{{ items }}</li>
+    </ul>
+  </div>
+</main>

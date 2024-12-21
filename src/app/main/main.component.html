@@ -3,7 +3,7 @@
     <h2>{{ name }}</h2>
     <div class="staying">
       <i class="fa-solid fa-location-dot"></i>
-      <p class="location">Georgia, Kutaisi</p>
+      <p class="location">Georgia, Tbilisi</p>
     </div>
     <article>
       <p class="text">
@@ -27,6 +27,15 @@
             <a href="https://github.com/otari3/" target="_blank"
               >all projects <i class="fa-solid fa-arrow-right"></i
             ></a>
+          </div>
+        </div>
+        <h1><span class="mark">*</span> Experience</h1>
+        <div class="projects">
+          <div *ngFor="let items of sharedFunctions.mainPageExperinec">
+            <a class="projectName">
+              {{ items.title }}
+            </a>
+            <p class="projectExplaning text" [innerHTML]="items.desc"></p>
           </div>
         </div>
         <h1><span class="mark">*</span> Education</h1>
