@@ -16,14 +16,19 @@ export class SharedFunctionsService {
   constructor() {}
   mainPageProjects = [
     {
-      title: 'Hotel Booking Site',
-      link: 'https://step-project-hotel-aa21.vercel.app',
-      desc: 'This project showcases my front-end skills with a booking website where <br /> guests can view and book rooms, as well as check their reservations.<br />',
+      title: 'Hotel Booking Platform For Hotels',
+      link: 'https://hotelfront-three.vercel.app/login',
+      desc: '  This site is designed for hotels to book guests, featuring full auth,  guest booking, and search systems. The backend is built with Django and  PostgreSQL, and the frontend is powered by Angular. P.S. The site might experience a 30-35 second cold start.',
     },
     {
       title: 'Film Site',
       link: 'https://films-site-murex.vercel.app',
       desc: 'This site features full authorization, bookmarking, and search <br/> systems. The backend is built with Node.js, Express, and <br/> MongoDB/Mongoose. P.S site might have 30-35s cold start',
+    },
+    {
+      title: 'Hotel Booking Site For Guests',
+      link: 'https://step-project-hotel-aa21.vercel.app',
+      desc: 'This project showcases my front-end skills with a booking website where <br /> guests can view and book rooms, as well as check their reservations.<br />',
     },
   ];
   mainPageEducation = [
@@ -52,7 +57,27 @@ export class SharedFunctionsService {
   ];
   allProjects = [
     {
-      header: 'Hotel Booking',
+      header: 'Hotel Booking Platform For Hotels',
+      link: 'https://hotelfront-three.vercel.app/login',
+      subHeader: 'creator',
+      desc: 'Hotel booking web application for Hotels',
+      achiv: [
+        'successfully create complex postgress with both raw queries and django orm ',
+        'successfully hosted my own django backend and postgres DB useing render',
+        'Implemented my own download system with dynamic file generation.',
+      ],
+      tech: [
+        'Angular',
+        'postgresql',
+        'django',
+        'python',
+        'typescript',
+        'psycopg2',
+        'ngrx',
+      ],
+    },
+    {
+      header: 'Hotel Booking Site For Guests',
       link: 'https://step-project-hotel-aa21.vercel.app/',
       subHeader: 'creator',
       desc: 'Hotel booking web application for guest',
