@@ -62,7 +62,7 @@ export class SharedFunctionsService {
       subHeader: 'creator',
       desc: 'Hotel booking web application for Hotels',
       achiv: [
-        'successfully create complex postgress with both raw queries and django orm ',
+        'successfully create complex postgress queries with both raw queries and django orm ',
         'successfully hosted my own django backend and postgres DB useing render',
         'Implemented my own download system with dynamic file generation.',
       ],
