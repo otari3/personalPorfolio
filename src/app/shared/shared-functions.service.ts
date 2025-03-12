@@ -35,7 +35,7 @@ export class SharedFunctionsService {
     {
       title: 'Do It in Georgia and PCAP Certification',
       link: '',
-      desc: 'I was selected for the "Do It in Georgia" government project, part <br> of an international certification training program. Out of 15,000 <br> applicants, only 1,000 were chosen, and I am currently preparing for <br> the PCAP (Python Certified Associate Programmer) exam. <br>',
+      desc: 'I successfully secured financing for the PCAP (Python Certified Associate<br />Programmer) exam after passing the internal assessments of the "Do It in<br />Georgia" government project—an international certification training program<br />that selected only 1,000 participants from 15,000 applicants. I went on to<br />pass the PCAP exam with a score of 80%.<a href="https://verify.openedg.org/?id=iBxP.reSD.kJmG" target="_blank">Confirmation</a>',
     },
     {
       title: 'Angular Training and Advanced Concepts at Step Academy',
